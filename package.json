@@ -1,0 +1,20 @@
+{
+  "name": "route53-update",
+  "version": "1.0.0",
+  "description": "Provides DDNS-like updates to your Route53 configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "M Cavanagh",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^18.1.0"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "minimist": "^1.2.0",
+    "node-fetch": "^1.6.3",
+    "request": "^2.79.0"
+  }
+}
