@@ -21,4 +21,4 @@ eg ```$ node index.js --AWS_ID=yourAWSId --AWS_SECRET=asdfasdfasdfasdf --AWS_REG
 1. Install docker on your RPi ```$ sudo curl https://get.docker.com | sh```
 2. Edit `config.env` to add the parameters as environment variables
 3. Install Docker-Compose on your device ```$ sudo pip install docker-compose```
-4. Run ```docker-compose up -d```
+4. Run ```docker-compose -f docker-compose-pi.yml up -d```
