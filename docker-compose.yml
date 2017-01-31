@@ -1,0 +1,6 @@
+version: '2'
+services:
+  ddns-updater:
+    image: darkynt/arm-route53-ddns
+    env_file: config.env
+    restart: always
