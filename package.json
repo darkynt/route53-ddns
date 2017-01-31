@@ -12,6 +12,7 @@
     "jest": "^18.1.0"
   },
   "dependencies": {
+    "aws-sdk": "^2.9.0",
     "bluebird": "^3.4.7",
     "co": "^4.6.0",
     "minimist": "^1.2.0",
