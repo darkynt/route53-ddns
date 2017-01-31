@@ -12,6 +12,7 @@
     "jest": "^18.1.0"
   },
   "dependencies": {
+    "bluebird": "^3.4.7",
     "co": "^4.6.0",
     "minimist": "^1.2.0",
     "node-fetch": "^1.6.3",

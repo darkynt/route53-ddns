@@ -1,7 +1,11 @@
 'use strict'
 
-const fetch = require('node-fetch')
-const co = require('co')
-const minimist = require('minimist')
+const getIp = require('./lib/getip')
+const mergedConf = require('./lib/mergeconf')
+var lastIp
 
 console.log("Okay")
+getIp.then(ip => {
+  if (ip !== lastIp)
+  updateIP(mergedConf, ip)
+})
