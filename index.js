@@ -8,9 +8,12 @@ var lastIp
 console.log("Okay")
 const checkAndUpdate = () => {
   getIp.then(ip => {
-    if (ip !== lastIp)
-    updateIP(mergedConf, ip)
+    if (ip !== lastIp) {
+      updateIP(mergedConf, ip)
+      lastIp = ip
+    }
   })
 }
-
-setInterval(checkAndUpdate, 3000)
+const msUpdateFrequency = parseInt((mergedConf['TTL'] || 300), 10) * 1000
+checkAndUpdate()
+setInterval(checkAndUpdate, msUpdateFrequency)
