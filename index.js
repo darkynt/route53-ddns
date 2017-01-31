@@ -13,4 +13,4 @@ const checkAndUpdate = () => {
   })
 }
 
-setInterval(checkAndUpdate, 4000)
+setInterval(checkAndUpdate, 3000)
